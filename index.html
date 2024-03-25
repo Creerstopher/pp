@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>PP</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header_items">
+            <div class="logo">
+                <img src="assets/img/go%20ctf2.svg">
+            </div>
+            <div class="header_menu">
+                <a href="#faq">faq</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="main_items">
+            <p>Открытый турнир Республики Татарстан по защите информации среди команд обучающихся общеобразовательных и
+                профессиональных образовательных организаций GO CTF-2024</p>
+        </div>
+    </div>
+</main>
+
+<div class="when">
+    <div class="container">
+        <div class="when_items">
+            <p style="font-weight: bold; font-size: 36pt">18 мая</p>
+            <p>отборочный этап (онлайн)</p>
+        </div>
+    </div>
+</div>
+
+<div class="faq" id="faq">
+    <div class="container">
+        <div class="faq_items">
+            <button class="accordion">кто устраивает?</button>
+            <div class="panel">
+                <p>Организаторами Соревнований выступают государственное автономное профессиональное образовательное
+                    учреждение «Международный центр компетенций – Казанский техникум информационных технологи и связи»
+                    (далее – техникум) совместно с Межрегиональной общественной организацией «Ассоциация руководителей
+                    служб информационной безопасности (г.Москва) (Далее – МРОО «АРСИБ») при поддержке Министерства
+                    цифрового развития государственного управления, информационных технологий и связи Республики
+                    Татарстан.</p>
+            </div>
+
+            <button class="accordion">а как участвовать?</button>
+            <div class="panel">
+                <p>Для участия в Турнире образовательная организация в срок до 25 апреля 2024 года (включительно)
+                    направляет в адрес оргкомитета заявку на участие в Турнире "GO CTF-2024"</p>
+            </div>
+
+            <button class="accordion">кто может участвовать?</button>
+            <div class="panel">
+                <p>К участию в Турнирах на основании решения оргкомитета допускается команды, состоящих из 5 (пяти)
+                    обучающихся в возрасте от 15 до 22 лет от каждой образовательной организации.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+</html>
